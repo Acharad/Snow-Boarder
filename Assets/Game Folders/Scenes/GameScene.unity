@@ -200,7 +200,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
-  m_LocalRotation: {x: -0.000000041228393, y: 0.20762695, z: 0.000000008750822, w: 0.9782081}
+  m_LocalRotation: {x: -8.878248e-16, y: 0.20762698, z: -1.309353e-16, w: 0.9782081}
   m_LocalPosition: {x: -5.153637, y: 3.093, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -304,7 +304,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 669183267}
-  m_LocalRotation: {x: -0.000000041228393, y: 0.20762695, z: 0.000000008750822, w: 0.9782081}
+  m_LocalRotation: {x: -8.878248e-16, y: 0.20762698, z: -1.309353e-16, w: 0.9782081}
   m_LocalPosition: {x: -5.153637, y: 3.093, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -614,7 +614,7 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
 --- !u!4 &2011806348
 Transform:
@@ -677,6 +677,7 @@ GameObject:
   - component: {fileID: 2075602621}
   - component: {fileID: 2075602620}
   - component: {fileID: 2075602623}
+  - component: {fileID: 2075602624}
   m_Layer: 0
   m_Name: Level Sprite Shape
   m_TagString: Untagged
@@ -889,7 +890,7 @@ EdgeCollider2D:
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
@@ -1038,3 +1039,21 @@ EdgeCollider2D:
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
   m_UseAdjacentEndPoint: 0
+--- !u!252 &2075602624
+SurfaceEffector2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2075602619}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Speed: 5
+  m_SpeedVariation: 0
+  m_ForceScale: 0.1
+  m_UseContactForce: 0
+  m_UseFriction: 1
+  m_UseBounce: 1
